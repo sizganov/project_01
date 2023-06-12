@@ -50,6 +50,6 @@ my_favorite_songs_dict = {
 
 song = random.sample(list(my_favorite_songs_dict.values()), 3)
 
-total_sum = sum(i for i in song)
+total_sum = sum([i for i in song])
 
 print(f'Три песни звучат {"%.2f" % total_sum} минут')
