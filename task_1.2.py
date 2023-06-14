@@ -20,11 +20,9 @@ my_favorite_songs = [
     ['In This World', 4.02],
 ]
 
-songs = random.sample(my_favorite_songs, 3)
-
 total_sum = 0
 
-for i in songs:
+for i in random.sample(my_favorite_songs, 3):
     total_sum +=i[1]
 
 print(f'Три песни звучат {"%.2f" % total_sum} минут') 
@@ -48,8 +46,6 @@ my_favorite_songs_dict = {
     'In This World': 4.02,
 }
 
-song = random.sample(list(my_favorite_songs_dict.values()), 3)
-
-total_sum = sum([i for i in song])
+total_sum = sum([i for i in random.sample(list(my_favorite_songs_dict.values()), 3)])
 
 print(f'Три песни звучат {"%.2f" % total_sum} минут')
